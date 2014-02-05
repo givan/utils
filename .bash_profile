@@ -14,13 +14,14 @@ alias ll='ls -alrth'
 alias rsl="rsync -avm --include='*.js' -f 'hide,! */' ~/src/naiad.service.perfsearch/lib/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/lib/"
 alias rsit="rsync -avm --include='*.js' -f 'hide,! */' ~/src/naiad.service.perfsearch/test/integration/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/test/integration/"
 alias rsut='rsync -avm --include='\''*.js'\'' -f '\''hide,! */'\'' ~/src/naiad.service.perfsearch/test/unit/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/test/unit/'
+alias lsd='ls -ldrth ./*/'
 
 ##
 # Your previous /Users/georgei/.bash_profile file was backed up as /Users/georgei/.bash_profile.macports-saved_2013-06-04_at_12:24:20
 ##
 
 # MacPorts Installer addition on 2013-06-04_at_12:24:20: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:$HOME/bin:/usr/local/mysql/bin:~/Downloads/apache-maven-3.1.1/bin:~/Downloads/scala-2.10.3/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:$HOME/bin:/usr/local/mysql/bin:/Users/georgei/Downloads/apache-ant-1.9.3/bin:/Users/georgei/Downloads/adt-bundle-mac-x86_64-20131030/sdk/tools:~/Downloads/apache-maven-3.1.1/bin:~/Downloads/scala-2.10.3/bin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 # see: http://stufftohelpyouout.blogspot.com/2010/01/show-name-of-git-branch-in-prompt.html
@@ -47,3 +48,5 @@ fi
 if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt 
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
