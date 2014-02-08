@@ -1,5 +1,8 @@
 export PS1='\u@\h[\w]\$ ' 
 
+alias ms='cd ~/src'
+alias md='cd ~/Downloads'
+alias mc='cd ~/Documents'
 alias cwa='cd ~/src/naiad.webapp.streamate'
 alias cnw='cd ~/src/naiad.web'
 alias cwp='cd ~/WebstormProjects'
