@@ -29,7 +29,6 @@ alias csp='cd ~/src/naiad.service.perfsearch.skin'
 alias rsl="rsync -avm --include='*.js' -f 'hide,! */' ~/src/naiad.service.perfsearch/lib/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/lib/"
 alias rsit="rsync -avm --include='*.js' -f 'hide,! */' ~/src/naiad.service.perfsearch/test/integration/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/test/integration/"
 
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
