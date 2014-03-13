@@ -6,10 +6,13 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
-  
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias pds='ssh pds-sw'
+alias kaiken='ssh kaiken'
+alias tardigrade='ssh tardigrade'
 alias rsw='~/bin/remount-skunk.sh'
 alias mg='cd ~/Documents/git'
 alias ms='cd ~/src'
@@ -28,6 +31,7 @@ alias csp='cd ~/src/naiad.service.perfsearch.skin'
 #alias ll='ls -alrth'
 alias rsl="rsync -avm --include='*.js' -f 'hide,! */' ~/src/naiad.service.perfsearch/lib/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/lib/"
 alias rsit="rsync -avm --include='*.js' -f 'hide,! */' ~/src/naiad.service.perfsearch/test/integration/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/test/integration/"
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -72,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
 
 export M2_HOME="/Users/georgei/Downloads/apache-maven-3.1.1"
-export M2=$M2_HOME/bin
+export M2="$M2_HOME/bin"
 
 export PATH="$JAVA_HOME/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:/Users/georgei/bin:/usr/local/mysql/bin:/Users/georgei/Downloads/apache-ant-1.9.3/bin:/Users/georgei/Downloads/adt-bundle-mac-x86_64-20131030/sdk/tools:$M2:/Users/georgei/Downloads/scala-2.10.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/georgei/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
