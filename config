@@ -1,0 +1,43 @@
+HOST *
+  ForwardAgent yes
+
+Host atgit
+Hostname git.accretivetg.com
+User gitolite
+
+Host tardigrade
+Hostname tardigrade.fciis.net
+User georgei
+
+Host pds-sw
+Hostname pds-sw.fciis.net
+User georgei
+
+Host pup
+Hostname pup.fciis.net
+User georgei
+
+Host roundworm
+Hostname roundworm.fciis.net
+User georgei
+
+Host kaiken
+Hostname kaiken.fciis.net
+User georgei
+
+Host olivebaboon
+Hostname olivebaboon.fciis.net
+User georgei
+
+Host mumak
+Hostname mumak.fciis.net
+User georgei
+
+Host blobfish
+Hostname blobfish.fciis.net
+User georgei
+
+Host awshost4
+Hostname ec2-54-213-39-111.us-west-2.compute.amazonaws.com
+User ubuntu
+IdentityFile "~/.ssh/startupEngNew.pem"
