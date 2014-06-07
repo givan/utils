@@ -11,10 +11,15 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pds='ssh pds-sw'
+alias ob='ssh olivebaboon'
 alias kaiken='ssh kaiken'
+alias olivebaboon='ssh olivebaboon'
+alias blobfish='ssh blobfish'
 alias tardigrade='ssh tardigrade'
 alias rsw='~/bin/remount-skunk.sh'
+alias rstr='~/bin/remount-strike.sh'
 alias mg='cd ~/Documents/git'
+alias maj='cd ~/Documents/git/aquent-jquery/'
 alias ms='cd ~/src'
 alias md='cd ~/Downloads'
 alias mc='cd ~/Documents'
@@ -22,7 +27,7 @@ alias cwa='cd ~/src/naiad.webapp.streamate'
 alias cnw='cd ~/src/naiad.web'
 alias cwp='cd ~/WebstormProjects'
 alias nt='npm test'
-#alias gs='git status'
+alias gs='git status'
 alias accountsdb="mysql -u root -p accounts"
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 #alias dir="ls -la"
@@ -31,7 +36,6 @@ alias csp='cd ~/src/naiad.service.perfsearch.skin'
 #alias ll='ls -alrth'
 alias rsl="rsync -avm --include='*.js' -f 'hide,! */' ~/src/naiad.service.perfsearch/lib/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/lib/"
 alias rsit="rsync -avm --include='*.js' -f 'hide,! */' ~/src/naiad.service.perfsearch/test/integration/  ~/Skunk/naiad/service/naiad.service.perfsearch/src/master/test/integration/"
-
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -75,10 +79,10 @@ source $ZSH/oh-my-zsh.sh
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
 
-export M2_HOME="/Users/georgei/Downloads/apache-maven-3.1.1"
+export M2_HOME="/Users/georgei/Downloads/apache-maven-3.2.1"
 export M2="$M2_HOME/bin"
 
-export PATH="$JAVA_HOME/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:/Users/georgei/bin:/usr/local/mysql/bin:/Users/georgei/Downloads/apache-ant-1.9.3/bin:/Users/georgei/Downloads/adt-bundle-mac-x86_64-20131030/sdk/tools:$M2:/Users/georgei/Downloads/scala-2.10.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/georgei/.rvm/bin"
+export PATH=$PATH:"$M2:$JAVA_HOME/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:/Users/georgei/bin:/usr/local/mysql/bin:/Users/georgei/Downloads/apache-ant-1.9.3/bin:/Users/georgei/Downloads/adt-bundle-mac-x86_64-20131030/sdk/tools:$M2:/Users/georgei/Downloads/scala-2.10.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/georgei/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -94,3 +98,5 @@ export PATH="$JAVA_HOME/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
